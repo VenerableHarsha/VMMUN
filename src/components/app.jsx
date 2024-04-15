@@ -1,7 +1,13 @@
+import Navbar  from "./navbar";
+import Home  from "./home";
+import Footer  from "./footer";
+
 export default function App() {
     return (
       <div>
-        <h1>Welcome to My react.js App!</h1>
+        <Navbar/>
+        <Home/>
+        <Footer/>
       </div>
     );
   }
