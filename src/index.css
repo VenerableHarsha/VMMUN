@@ -10,7 +10,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.scrollbar{
+  display:none;
+}
+@media screen and (max-width: 600px) {
+  .taha{
+    display: none;
+  }
+  .taha2{
+    display: block;
+  }
+  
+}
+

@@ -6,7 +6,7 @@ export default function App() {
       <div className="">
       <Navbar/>
       <Home/>
-      <Footer/>
+      
       </div>
     );
   }
