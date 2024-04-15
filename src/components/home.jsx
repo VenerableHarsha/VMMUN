@@ -10,7 +10,6 @@ export default function Footer() {
           <button className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200">Sign Up</button>
         </div>
       </div>
-    )
-  }
+   
     );
   }
