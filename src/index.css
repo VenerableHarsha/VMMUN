@@ -16,8 +16,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.scrollbar2{
+  background-color: #8f3b9d;
+}
 .scrollbar{
   display:none;
+}
+.navbar{
+  background-color: #1d1d1d;
+  color: #8f3b9d;
+}
+.navbar2{
+  background-color: #1d1d1d;
+  color: #8f3b9d;
+}
+.signup{
+  background-color: #8f3b9d;
 }
 @media screen and (max-width: 600px) {
   .taha{
