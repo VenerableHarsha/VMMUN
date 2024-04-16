@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Logo from './utilities/mvlogo.svg'
 
 
 
@@ -9,7 +10,7 @@ function Navbar() {
     <div className=''>
     <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
-            {false&&<img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>}
+            {<img className="w-10 h-10 mr-2" src={Logo} alt='icon'></img>}
             <div className='text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
         <div className='flex gap-12 items-center taha cursor-pointer '>
