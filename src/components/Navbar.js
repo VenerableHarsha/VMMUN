@@ -7,15 +7,16 @@ function Navbar() {
     
   return (
     <div className=''>
-    <div className=' text-black p-3 text-sm flex justify-between navbar'>
+    <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
-            <img className="w-8 mr-2" src="" alt='icon'></img>
-            <div className='text-xl'><span className='font-bold'>MV</span>MUN</div>
+            <img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>
+            <div className='text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
         <div className='flex gap-12 items-center taha '>
             <div>Home</div>
             <div>About</div>
             <div>Info</div>
+            
             <div className='bg-black text-black p-2 px-6 rounded-3xl signup'>Sign Up</div>
 
         </div>
@@ -35,6 +36,7 @@ function Navbar() {
            <div className=''>Home</div>
            <div className=''>About</div>
            <div className=''>Info</div>
+           <div>Sign up</div>
         </div>
     }
     </div>
