@@ -12,12 +12,12 @@ function Navbar() {
             {false&&<img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>}
             <div className='text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
-        <div className='flex gap-12 items-center taha '>
-            <div>Home</div>
-            <div>About</div>
-            <div>Info</div>
+        <div className='flex gap-12 items-center taha cursor-pointer '>
+            <div className='hover:text-white'>Home</div>
+            <div className='hover:text-white'>About</div>
+            <div className='hover:text-white'>Info</div>
             
-            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold'>Sign Up</div>
+            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'>Sign Up</div>
 
         </div>
         <div className='scrollbar taha2' onClick={()=>{
