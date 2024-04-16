@@ -7,7 +7,7 @@ function Navbar() {
     
   return (
     <div className=''>
-    <div className=' text-black p-3 text-sm flex justify-between navbar'>
+    <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
             <img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>
             <div className='text-3xl'><span className='font-bold'>MV</span>MUN</div>
