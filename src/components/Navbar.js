@@ -33,10 +33,10 @@ function Navbar() {
     </div>
     {flag&&
         <div className='flex flex-col gap-4  p-6 cursor-pointer navbar2 w-screen'>
-           <div className=''>Home</div>
-           <div className=''>About</div>
-           <div className=''>Info</div>
-           <div>Sign up</div>
+           <div className='hover:text-white'>Home</div>
+           <div className='hover:text-white'>About</div>
+           <div className='hover:text-white'>Info</div>
+           <div className='hover:text-white'>Sign up</div>
         </div>
     }
     </div>
