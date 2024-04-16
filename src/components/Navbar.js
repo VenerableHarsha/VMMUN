@@ -9,7 +9,7 @@ function Navbar() {
     <div className=''>
     <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
-            <img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>
+            {false&&<img className="w-8 mr-2" src="./public/Mockup@4x.png" alt='icon'></img>}
             <div className='text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
         <div className='flex gap-12 items-center taha '>
@@ -17,7 +17,7 @@ function Navbar() {
             <div>About</div>
             <div>Info</div>
             
-            <div className='bg-black text-black p-2 px-6 rounded-3xl signup'>Sign Up</div>
+            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold'>Sign Up</div>
 
         </div>
         <div className='scrollbar taha2' onClick={()=>{
