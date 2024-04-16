@@ -24,7 +24,7 @@ function Navbar() {
         <div className='scrollbar taha2' onClick={()=>{
             setflag(!flag);
         }} >
-           <div className='cursor-pointer w-10 rounded-lg h-9 bg-black flex flex-col gap-1.5 justify-center items-center scrollbar2'>
+           <div className='cursor-pointer w-10 rounded-lg h-9 bg-black flex flex-col gap-1.5 justify-center items-center scrollbar2 hover:bg-white'>
             <div className='w-6 h-0.5 bg-black'></div>
             <div className='w-6 h-0.5 bg-black'></div>
             <div className='w-6 h-0.5 bg-black'></div>
