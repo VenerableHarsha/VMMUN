@@ -16,6 +16,7 @@ function Navbar() {
             <div>Home</div>
             <div>About</div>
             <div>Info</div>
+            
             <div className='bg-black text-black p-2 px-6 rounded-3xl signup'>Sign Up</div>
 
         </div>
@@ -35,6 +36,7 @@ function Navbar() {
            <div className=''>Home</div>
            <div className=''>About</div>
            <div className=''>Info</div>
+           <div>Sign up</div>
         </div>
     }
     </div>
