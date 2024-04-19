@@ -7,16 +7,16 @@ function Navbar() {
     const [flag,setflag]=useState(false);
     
   return (
-    <div className='absolute w-screen'>
+    <div className='absolute w-[100%]'>
     <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
             {<img className="w-10 h-10 mr-2" src={Logo} alt='icon'></img>}
             <div className='text-2xl sm:text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
         <div className='flex gap-12 items-center taha cursor-pointer '>
-            <div className='hover:text-white'>Home</div>
-            <div className='hover:text-white'>About</div>
-            <div className='hover:text-white'>Info</div>
+            <div className='hover:texturple-600'>Home</div>
+            <div className='hover:text-purple-600'>About</div>
+            <div className='hover:text-purple-600'>Info</div>
             
             <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'>Sign Up</div>
 
@@ -34,10 +34,10 @@ function Navbar() {
     </div>
     {flag&&
         <div className='flex flex-col gap-4  p-6 cursor-pointer navbar2 w-screen'>
-           <div className='hover:text-white'>Home</div>
-           <div className='hover:text-white'>About</div>
-           <div className='hover:text-white'>Info</div>
-           <div className='hover:text-white'>Sign up</div>
+           <div className='hover:text-purple-500'>Home</div>
+           <div className='hover:text-purple-500'>About</div>
+           <div className='hover:text-purple-500'>Info</div>
+           <div className='hover:text-purple-500'>Sign up</div>
         </div>
     }
     </div>

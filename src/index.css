@@ -30,6 +30,9 @@ code {
   background-color:black;
   color: white;
 }
+.bc{
+  background-color: rgb(238, 128, 232);
+}
 .signup{
   background-color: #8f3b9d;
 }
