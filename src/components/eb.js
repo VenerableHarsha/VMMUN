@@ -3,7 +3,7 @@ import "../styles/eb.css";
 import ugandan from "./utilities/download.png";
 
 function eb() {
-    // Array of image URLs
+
     const images = [
         ugandan,
         ugandan,
@@ -12,7 +12,16 @@ function eb() {
         ugandan,
         ugandan,
         ugandan,
+        ugandan, 
     ];
+
+    const imagesPerRow = 4;
+
+
+    const rows = [];
+    for (let i = 0; i < images.length; i += imagesPerRow) {
+        rows.push(images.slice(i, i + imagesPerRow));
+    }
 
     return (
         <div style={{background:"#43014a", padding: "20px"}} >
@@ -38,25 +47,29 @@ function eb() {
             <div
                 style={{
                     display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
+                    flexDirection: "column",
+                    alignItems: "center",
                     gap: "10px",
                     marginTop: "20px",
                 }}
             >
-                {images.map((image, index) => (
-                    <img
-                        key={index}
-                        src={image}
-                        alt={`Logo${index + 1}`}
-                        style={{
-                            width: "150px",
-                            height: "150px",
-                            objectFit: "cover",
-                            borderRadius: "10px",
-                            marginBottom: "10px",
-                        }}
-                    />
+                {rows.map((row, rowIndex) => (
+                    <div key={rowIndex} style={{ display: "flex", gap: "10px" }}>
+                        {row.map((image, imageIndex) => (
+                            <img
+                                key={imageIndex}
+                                src={image}
+                                alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
+                                style={{
+                                    width: "300px",
+
+                                    objectFit: "cover",
+                                    borderRadius: "10px",
+                                    margin: "15px 10px ",
+                                }}
+                            />
+                        ))}
+                    </div>
                 ))}
             </div>
         </div>
