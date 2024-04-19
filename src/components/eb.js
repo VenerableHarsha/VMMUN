@@ -1,8 +1,25 @@
-import React from 'react';
-import "../styles/eb.css";
+import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
 
-function eb() {
+function EB() {
+    const [imagesPerRow, setImagesPerRow] = useState(4); // Initially set to 4 images per row
+
+    useEffect(() => {
+        const handleResize = () => {
+
+            if (window.innerWidth < 768) {
+                setImagesPerRow(2);
+            } else {
+                setImagesPerRow(4); 
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const images = [
         ugandan,
@@ -12,11 +29,13 @@ function eb() {
         ugandan,
         ugandan,
         ugandan,
-        ugandan, 
+        ugandan,
+  
     ];
 
-    const imagesPerRow = 4;
+    const containerWidth = window.innerWidth; 
 
+    const imageWidth = containerWidth / imagesPerRow - 5*imagesPerRow; 
 
     const rows = [];
     for (let i = 0; i < images.length; i += imagesPerRow) {
@@ -24,7 +43,7 @@ function eb() {
     }
 
     return (
-        <div style={{background:"#43014a", padding: "20px"}} >
+        <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "30px" }} >
             <div
                 style={{
                     display: "flex",
@@ -38,9 +57,10 @@ function eb() {
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
+                        margin: "10px",
                     }}
                 >
-                    <h1 style={{ fontFamily: "Montserrat, sans-serif", fontSize:"2rem", margin: "0" }}><b>EB</b></h1>
+                    <h1 style={{ fontFamily: "Montserrat, sans-serif", fontSize: "2rem" }}><b>EB</b></h1>
                 </div>
             </div>
 
@@ -51,22 +71,18 @@ function eb() {
                     alignItems: "center",
                     gap: "10px",
                     marginTop: "20px",
+
                 }}
             >
                 {rows.map((row, rowIndex) => (
-                    <div key={rowIndex} style={{ display: "flex", gap: "10px" }}>
+                    <div key={rowIndex} style={{ display: "flex", gap: "20px" }}>
                         {row.map((image, imageIndex) => (
                             <img
                                 key={imageIndex}
                                 src={image}
                                 alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
-                                style={{
-                                    width: "300px",
-
-                                    objectFit: "cover",
-                                    borderRadius: "10px",
-                                    margin: "15px 10px ",
-                                }}
+                                className="image"
+                                style={{ borderRadius: "10px", width: `${imageWidth}px` ,marginBottom:"50px"}}
                             />
                         ))}
                     </div>
@@ -76,4 +92,4 @@ function eb() {
     );
 }
 
-export default eb;
+export default EB;

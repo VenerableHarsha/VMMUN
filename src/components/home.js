@@ -5,7 +5,7 @@ import Logo from './utilities/mvlogo.svg'
 
 export default function Home() {
     return (
-        <div className=" min-h-screen bg-black text-white flex flex-col" style={{backgroundColor:"black", color:"white", backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
+        <div className=" min-h-screen w-screen bg-black text-white flex flex-col" style={{backgroundColor:"black", color:"white", backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
           
         <div className="flex-1 flex flex-col justify-center ml-[10%] -mt-19 ">
         <div className="grid grid-cols-2 w-[50%] gap-4">
