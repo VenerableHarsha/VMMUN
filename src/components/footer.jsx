@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   const handleBackToTop = () => {
-    // Implement the logic to scroll back to the top of the page
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleContact = () => {
-    // Implement the logic to handle the contact action
+
     alert('Contact action triggered!');
   };
 
