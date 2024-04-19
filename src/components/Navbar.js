@@ -7,7 +7,7 @@ function Navbar() {
     const [flag,setflag]=useState(false);
     
   return (
-    <div className=''>
+    <div className='absolute w-screen'>
     <div className=' text-black p-3  flex justify-between navbar'>
         <div className='flex items-center'>
             {<img className="w-10 h-10 mr-2" src={Logo} alt='icon'></img>}
