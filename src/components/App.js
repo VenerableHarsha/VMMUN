@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Footer from "./footer";
+import AboutMV from "./AboutMV";
 import Eb from "./eb";
 import Kit from "./Kit";
 import Home from "./home";
@@ -11,6 +11,7 @@ export default function App() {
       <Navbar />
 
         <Home />
+        <AboutMV/>
         <Eb />
         <Kit />
 
