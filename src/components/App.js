@@ -1,14 +1,22 @@
 import About_us from "./About_us";
 import Navbar from "./Navbar";
-import Footer from "./footer";
+import AboutMV from "./AboutMV";
+import Eb from "./eb";
+import Kit from "./Kit";
 import Home from "./home";
+
+
 export default function App() {
-    return (
-      <div className="">
-      <Navbar/>
-      <Home/>
-      <About_us/>
-      
-      </div>
-    );
-  }
+  return (
+    <div className="app">
+      <Navbar />
+
+        <Home />
+        <About_us/>
+        <AboutMV/>
+        <Eb />
+        <Kit />
+
+    </div>
+  );
+}
