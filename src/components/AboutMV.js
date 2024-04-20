@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
 
 function AboutMV() {
-    const [imagesPerRow, setImagesPerRow] = useState(4); // Initially set to 4 images per row
+    const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
 
     useEffect(() => {

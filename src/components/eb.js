@@ -81,7 +81,7 @@ function EB() {
                                 src={image}
                                 alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                 className="image"
-                                style={{ borderRadius: "10px", width: `${imageWidth}px` ,marginBottom:"50px"}}
+                                style={{ borderRadius: "10px", width: `${imageWidth}px` ,marginBottom:"30px"}}
                             />
                         ))}
                     </div>
