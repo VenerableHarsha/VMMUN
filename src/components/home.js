@@ -6,23 +6,25 @@ import Logo from './utilities/mvlogo.svg'
 
 export default function Home() {
     return (
-        <div className=" min-h-screen w-screen bg-black text-white flex flex-col" style={{backgroundColor:"black", color:"white", backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
+        <div className=" bg-black text-white flex flex-col" style={{backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
+          <div className="flex flex-col  justify-center items-center align-center " >
           
-        <div className="flex-1 flex flex-col justify-center ml-[10%] -mt-19 ">
-        <div className="grid grid-cols-2 w-[50%] gap-4">
-        <img src={Logo} alt="MV MUN" className="" />
-          <div className="border-l-8 pl-6 border-[#8F3B9D] text-[#8F3B9D]">
-          <h1 className="text-4xl sm:text-8xl mb-4 font-light ">
-            <span className="font-bold">MV</span>
-            MUN{"\n              "}
-          </h1>
-          <p className="text-xl sm:text-2xl mb-8">THE FIRST EDITION</p>
-          <button className="bg-[#8F3B9D] text-black px-8 py-3 rounded-full hover:bg-gray-200 items-center w-[8rem] font-black sm:scale-100 sc">Sign Up</button>
+          <div className="flex flex-col  justify-center items-center align-center sm:mt-[20vh] mt-[10vh]  sm:px-[6vw] px-[18vw] py-[3vh] bg-white rounded-[100px] bg-opacity-[30%] ">
+          <img src={Logo} alt="MV MUN" className="brightness-0 drop-shadow-3xl max-w-[60%]" style={{filter: `drop-shadow( 5px 5px 3px rgba(0, 0, 0, .7)) brightness(0)`}}/>
+  
+            <h1 className="text-4xl sm:text-9xl mb-4 font-light text-black tracking-wide" style={{filter: `drop-shadow( 5px 5px 3px rgba(0, 0, 0, .7))`}}>
+              <span className="font-bold ">MV</span>
+              MUN{"\n              "}
+            </h1>
+            <p className="text-xl sm:text-4xl mb-8 text-black font-bold">THE FIRST EDITION</p>
+            <button className="bg-[#000000] text-white  py-3 rounded-full hover:bg-[#8F3B9D] items-center w-[8rem] font-black sm:scale-100 sc">Sign Up</button>
+  
+  
           </div>
-        </div>
+          
         </div>
         <Footers/>
-      </div>
+        </div>
    
     );
   }

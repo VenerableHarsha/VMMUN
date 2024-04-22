@@ -4,6 +4,7 @@ import AboutMV from "./AboutMV";
 import Eb from "./eb";
 import Kit from "./Kit";
 import Home from "./home";
+import Footers from "./footer";
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <AboutMV/>
         <Eb />
         <Kit />
+        <Footers/>
 
     </div>
   );
