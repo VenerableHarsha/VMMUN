@@ -25,7 +25,7 @@ function AboutMV() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const imageWidth = containerWidth / imagesPerRow - 50; 
+    const imageWidth = containerWidth / imagesPerRow - 90; 
     const textWidth = containerWidth / imagesPerRow - 40; 
 
     const images = [
@@ -38,7 +38,7 @@ function AboutMV() {
 
     const texts = [
         "Rtr. Navya Rao \n Co-Secretary General",
-        "Harsha C \n Direct General",
+        "Harsha Chigurupati \n Direct General",
         "Rtr. Sujal Prakash Naidu \n Co-Secretary General",
         "Rtr. Karthik Venkatesh U. \n Head of OC",
         "Veeksha S G \n Head of OC ",
@@ -66,9 +66,9 @@ function AboutMV() {
                                     src={image}
                                     alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                     className="image"
-                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "10px" }}
+                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "20px" }}
                                 />
-                                <h1 style={{ fontFamily: "Bahnschrift", fontSize: "1.25rem", textAlign: "center", width: `${textWidth}px` }}>
+                                <h1 style={{ fontFamily: "Bahnschrift", fontSize: "1.25rem",color:"white", textAlign: "center", width: `${textWidth}px`,marginBottom: "20px" }}>
                                     <b>{row.texts[imageIndex]}</b>
                                 </h1>
                             </div>

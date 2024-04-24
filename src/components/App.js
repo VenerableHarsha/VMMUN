@@ -1,6 +1,6 @@
 import About_us from "./About_us";
 import Navbar from "./Navbar";
-import AboutMV from "./AboutMV";
+import AboutMV from "./Secretariat";
 import Eb from "./eb";
 import Kit from "./Kit";
 import Home from "./home";
