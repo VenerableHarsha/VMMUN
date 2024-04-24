@@ -14,7 +14,7 @@ function Navbar() {
             {<img className="w-10 h-10 mr-2" src={Logo} alt='icon'></img>}
             <div className='text-2xl sm:text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
-        <div className='flex gap-12 items-center taha cursor-pointer '>
+        <div className='flex gap-12 items-center taha cursor-pointer text-sm'>
 
             <div className='hover:text-purple-600'>About</div>
             <div className='hover:text-purple-600'>Committees</div>
