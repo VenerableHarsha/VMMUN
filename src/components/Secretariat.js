@@ -14,7 +14,7 @@ function AboutMV() {
             } else if (window.innerWidth < 768) {
                 setImagesPerRow(2);
             } else {
-                setImagesPerRow(4); 
+                setImagesPerRow(3); 
             }
         };
 
@@ -25,7 +25,7 @@ function AboutMV() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const imageWidth = containerWidth / imagesPerRow - 40; 
+    const imageWidth = containerWidth / imagesPerRow - 90; 
     const textWidth = containerWidth / imagesPerRow - 40; 
 
     const images = [
@@ -33,13 +33,15 @@ function AboutMV() {
         ugandan,
         ugandan,
         ugandan,
+        ugandan,
     ];
 
     const texts = [
-        "Caucus",
-        "WHO",
-        "Ethics",
-        "Lassoon",
+        "Rtr. Navya Rao \n Co-Secretary General",
+        "Harsha Chigurupati \n Direct General",
+        "Rtr. Sujal Prakash Naidu \n Co-Secretary General",
+        "Rtr. Karthik Venkatesh U. \n Head of OC",
+        "Veeksha S G \n Head of OC ",
     ];
 
     const rows = [];
@@ -51,7 +53,7 @@ function AboutMV() {
         <div className="min-h-screen w-screen" style={{ background: " #71037d", padding: "30px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <h1 style={{ fontFamily: "Bahnschrift", padding: "50px", fontSize: "2.5rem" }}><b>About MVMUN</b></h1>
+                    <h1 style={{ fontFamily: "Bahnschrift", padding: "50px", fontSize: "2.5rem" }}><b>Secretariat</b></h1>
                 </div>
             </div>
 
@@ -64,9 +66,9 @@ function AboutMV() {
                                     src={image}
                                     alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                     className="image"
-                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "10px" }}
+                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "20px" }}
                                 />
-                                <h1 style={{ fontFamily: "Bahnschrift", fontSize: "1.25rem", textAlign: "center", width: `${textWidth}px` }}>
+                                <h1 style={{ fontFamily: "Bahnschrift", fontSize: "1.25rem",color:"white", textAlign: "center", width: `${textWidth}px`,marginBottom: "20px" }}>
                                     <b>{row.texts[imageIndex]}</b>
                                 </h1>
                             </div>
