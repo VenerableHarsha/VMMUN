@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
-
+// only three images please 
 function EB() {
     const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
@@ -12,10 +12,10 @@ function EB() {
             } else if (window.innerWidth < 768) {
                 setImagesPerRow(2);
             } else {
-                setImagesPerRow(4); 
+                setImagesPerRow(3); 
             }
             const containerWidth = window.innerWidth; 
-            setImageWidth(containerWidth / imagesPerRow); 
+            setImageWidth(containerWidth / imagesPerRow-70); 
         };
 
         window.addEventListener('resize', handleResize);
@@ -29,7 +29,7 @@ function EB() {
         ugandan,
         ugandan,
         ugandan,
-        ugandan,
+
     ];
 
     const rows = [];
