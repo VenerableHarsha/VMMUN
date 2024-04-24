@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Logo from './utilities/mvlogo.svg'
-
+import AboutUsBg from './utilities/Background.svg'; 
 
 
 
@@ -36,11 +36,13 @@ function Navbar() {
         </div>
     </div>
     {flag&&
-        <div className='flex flex-col gap-4  p-6 cursor-pointer navbar2 w-screen'>
-           <div className='hover:text-purple-500'>Home</div>
-           <div className='hover:text-purple-500'>About</div>
-           <div className='hover:text-purple-500'>Info</div>
-           <div className='hover:text-purple-500'>Sign up</div>
+        <div className='flex flex-col gap-4  p-6 cursor-pointer navbar2 w-screen z-10 sticky' style={{ backgroundImage: `url(${AboutUsBg})` , backgroundSize: 'cover'}}>
+           <div className='hover:text-purple-600'>About</div>
+            <div className='hover:text-purple-600'>Committees</div>
+            <div className='hover:text-purple-600'>Secretariat</div>
+            <div className='hover:text-purple-600'>Conference Details</div>
+            <div className='hover:text-purple-600'>Contact Us</div>
+            <div className='hover:text-purple-600 text-2xl font-black text-white'>Sign Up</div>
         </div>
     }
     </div>
