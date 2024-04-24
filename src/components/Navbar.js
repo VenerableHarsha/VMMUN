@@ -21,7 +21,7 @@ function Navbar() {
             <div className='hover:text-purple-600'><a href='#secretariat'>Secretariat</a></div>
             <div className='hover:text-purple-600'><a href='#conference'>Conference Details</a></div>
             <div className='hover:text-purple-600'><a href='#contact'>Contact Us</a></div>
-            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'>Sign Up</div>
+            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white' onClick={()=> window.open('https://forms.gle/gFoLadAdk1raK6Zs5')}>Sign Up</div>
 
         </div>
         <div className='scrollbar taha2' onClick={()=>{
@@ -42,7 +42,10 @@ function Navbar() {
             <div className='hover:text-purple-600'><a href='#secretariat' onClick={()=> setflag(!flag)}>Secretariat</a></div>
             <div className='hover:text-purple-600'><a href='#conference'onClick={()=> setflag(!flag)}>Conference Details</a></div>
             <div className='hover:text-purple-600'><a href='#contact' onClick={()=> setflag(!flag)}>Contact Us</a></div>
-            <div className='hover:text-purple-600 text-2xl font-black text-white' onClick={()=> setflag(!flag)}>Sign Up</div>
+            <div className='hover:text-purple-600 text-2xl font-black text-white' onClick={()=> {
+                window.open('https://forms.gle/gFoLadAdk1raK6Zs5');
+                setflag(!flag);
+            }}>Sign Up</div>
         </div>
     }
     </div>
