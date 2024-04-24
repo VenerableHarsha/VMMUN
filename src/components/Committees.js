@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
-<<<<<<< HEAD
 
-function EB() {
-=======
-// only three images please 
+
+
 function Committees() {
->>>>>>> c03b421729998b9b99e98c4a4cb99cbdb014961f
+
     const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
 
@@ -46,11 +44,11 @@ function Committees() {
         <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "70px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
-<<<<<<< HEAD
+
                     <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committee</b></h1>
-=======
-                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committees</b></h1>
->>>>>>> c03b421729998b9b99e98c4a4cb99cbdb014961f
+
+                    
+
                 </div>
             </div>
 
@@ -72,17 +70,6 @@ function Committees() {
         </div>
     );
                         }
-// return(
-//     <div className='min-h-screen w-screen absolute' style={{background:"#43014a"}}>
-//         <div className='text-2xl flex justify-center mt-7'>Eb</div>
-//         <div className='flex flex-wrap justify-center gap-5 mt-24 '>
-//             <img src={ugandan} className='rounded-xl w-'></img>
-//             <img src={ugandan} className='rounded-xl w-'></img>
-//             <img src={ugandan} className='rounded-xl w-'></img>
-//             <img src={ugandan} className='rounded-xl w-'></img>
-//         </div>
 
-//     </div>)
-// }
 
 export default Committees;

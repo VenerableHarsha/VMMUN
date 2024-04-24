@@ -1,9 +1,12 @@
 import React from 'react';
+import PersonIcon from './utilities/person.svg';
 
 const Footer = () => {
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+
 
   return (
     <div className="bg-black text-white flex flex-col">
@@ -11,29 +14,82 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
 
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className="flex flex-col items-center">
+
+            <div className="flex flex-col items-center">
               <h1 style={{ fontFamily: "Bahnschrift", padding: "20px", fontSize: "2.5rem" }}>
                 <b>Secretariat</b>
               </h1>
               <div className="flex items-center space-x-2">
-                <PhoneIcon className="w-5 h-5" />
-                <span>+1 (555) 555-5555</span>
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>    
+                <span>Rtr. Navya Rao </span>
               </div>
               <div className="flex items-center space-x-2">
                 <MailboxIcon className="w-5 h-5" />
-                <span>info@example.com</span>
+                <span>inavyarao@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
-                <PhoneIcon className="w-5 h-5" />
-                <span>+1 (555) 555-5555</span>
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Rtr. Sujal Prakash Naidu </span>
               </div>
               <div className="flex items-center space-x-2">
                 <MailboxIcon className="w-5 h-5" />
-                <span>info@example.com</span>
+                <span>sujalp1907@gmail.com</span>
               </div>
+              
             </div>
-          ))}
+
+
+            <div className="flex flex-col items-center">
+              <h1 style={{ fontFamily: "Bahnschrift", padding: "20px", fontSize: "2.5rem" }}>
+                <b>Delegate Affairs </b>
+              </h1>
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Rtr. Preetha D S </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-5 h-5" />
+                <span>+91 789-257-6338</span>
+              </div>
+              
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Shushrut </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-5 h-5" />
+                <span>+91 776-091-7384</span>
+              </div>
+              
+            </div>
+
+
+
+            <div className="flex flex-col items-center">
+              <h1 style={{ fontFamily: "Bahnschrift", padding: "20px", fontSize: "2.5rem" }}>
+                <b>Finance </b>
+              </h1>
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Rtr. Vedanth Masala </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-5 h-5" />
+                <span>+91 990-087-2672</span>
+              </div><div className="flex items-center space-x-2">
+
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+
+                <span>Akshar Rao  </span>
+                </div>
+                <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-5 h-5" />
+                <span>+91 636-193-0964</span>
+                </div>
+              
+            </div>
+
+
         </div>
         <div className="mt-4 md:mt-0 space-x-4">
           <button className="text-gray-400 hover:text-gray-300" onClick={handleBackToTop}>
