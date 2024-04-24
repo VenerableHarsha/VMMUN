@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
-
 // only three images please 
 function Committees() {
-
     const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
 
