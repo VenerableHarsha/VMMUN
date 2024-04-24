@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
 
-function AboutMV() {
+function Secretariat() {
     const [imagesPerRow, setImagesPerRow] = useState(4);
     const [containerWidth, setContainerWidth] = useState(0);
 
@@ -85,4 +85,4 @@ function AboutMV() {
     );
 }
 
-export default AboutMV;
+export default Secretariat;
