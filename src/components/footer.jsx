@@ -24,6 +24,14 @@ const Footer = () => {
                 <MailboxIcon className="w-5 h-5" />
                 <span>info@example.com</span>
               </div>
+              <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-5 h-5" />
+                <span>+1 (555) 555-5555</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MailboxIcon className="w-5 h-5" />
+                <span>info@example.com</span>
+              </div>
             </div>
           ))}
         </div>

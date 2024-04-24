@@ -17,7 +17,7 @@ export default function Home() {
             </h1>
             <p className="text-xl sm:text-4xl mb-8 text-black font-bold">THE FIRST EDITION</p>
 
-            <button className="bg-[#000000] text-white  py-3 rounded-full hover:bg-[#8F3B9D] items-center w-[8rem] font-black sm:scale-100 sc" ><a href="https://docs.google.com/forms/d/e/1FAIpQLScbI8HntdPouYheyQZLzm6QZzDUHHt95DUNXMur7pjszW3-Nw/viewform?pli=1">Sign Up</a></button>
+            <button className="bg-[#000000] text-white  py-3 rounded-full hover:bg-[#8F3B9D] items-center w-[8rem] font-black sm:scale-100 sc" onClick={()=> window.open('https://forms.gle/gFoLadAdk1raK6Zs5')}>Sign Up</button>
   
   
           </div>
