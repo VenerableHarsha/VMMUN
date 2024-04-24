@@ -8,7 +8,7 @@ export default function Home() {
         <div className=" bg-black text-white flex flex-col" style={{backgroundImage: `url(${Bg})` ,height:'100vh', backgroundSize: 'cover'}}>
           <div className="flex flex-col  justify-center items-center align-center " >
           
-          <div className="flex flex-col  justify-center items-center align-center sm:mt-[20vh] mt-[10vh]  sm:px-[6vw] px-[18vw] py-[3vh] bg-white rounded-[100px] bg-opacity-[30%] ">
+          <div className="flex flex-col  justify-center items-center align-center sm:mt-[15vh] mt-[10vh]  sm:px-[6vw] px-[18vw] py-[3vh] bg-white rounded-[100px] bg-opacity-[30%] ">
           <img src={Logo} alt="MV MUN" className="brightness-0 drop-shadow-3xl max-w-[60%]" style={{filter: `drop-shadow( 5px 5px 3px rgba(0, 0, 0, .7)) brightness(0)`}}/>
   
             <h1 className="text-4xl sm:text-9xl mb-4 font-light text-black tracking-wide" style={{filter: `drop-shadow( 5px 5px 3px rgba(0, 0, 0, .7))`}}>
