@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
 // only three images please 
-function EB() {
+function Committees() {
     const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
 
@@ -38,10 +38,10 @@ function EB() {
     }
 
     return (
-        <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "30px" }}>
+        <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "70px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
-                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>EB</b></h1>
+                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committees</b></h1>
                 </div>
             </div>
 
@@ -76,4 +76,4 @@ function EB() {
 //     </div>)
 // }
 
-export default EB;
+export default Committees;

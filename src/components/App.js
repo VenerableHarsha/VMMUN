@@ -1,10 +1,10 @@
 import About_us from "./About_us";
 import Navbar from "./Navbar";
-import AboutMV from "./Secretariat";
-import Eb from "./Committees";
 import Kit from "./Kit";
 import Home from "./home";
 import Footers from "./footer";
+import Committees from "./Committees";
+import Secretariat from "./Secretariat";
 
 
 export default function App() {
@@ -12,11 +12,21 @@ export default function App() {
     <div className="app">
       <Navbar />
 
+        <div id="home">
         <Home />
+        </div>
+        <div id="about" >
         <About_us/>
-        <AboutMV/>
-        <Eb />
+        </div>
+        <div id="secretariat">
+        <Secretariat />
+        </div>
+        <div id="committees">
+        <Committees />
+        </div>
+        <div id="kit">
         <Kit />
+        </div>
         <Footers/>
 
     </div>
