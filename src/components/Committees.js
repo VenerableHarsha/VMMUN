@@ -38,7 +38,7 @@ function Committees() {
     }
 
     return (
-        <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "70px" }}>
+        <div className="min-h-screen w-[100%]" style={{ background: "#43014a", padding: "70px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
 

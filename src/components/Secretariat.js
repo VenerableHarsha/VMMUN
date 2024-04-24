@@ -50,7 +50,7 @@ function Secretariat() {
     }
 
     return (
-        <div className="min-h-screen w-screen" style={{ background: "#71037d", padding: "30px" }}>
+        <div className="min-h-screen w-[100%]" style={{ background: "#71037d", padding: "30px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <h1 style={{ fontFamily: "Bahnschrift", padding: "50px", fontSize: "2.5rem" }}><b>Secretariat</b></h1>
