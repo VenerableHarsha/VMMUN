@@ -30,6 +30,7 @@ function EB() {
         ugandan,
         ugandan,
         ugandan,
+
     ];
 
     const rows = [];

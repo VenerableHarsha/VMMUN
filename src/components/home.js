@@ -1,4 +1,3 @@
-import Footers from "./footer";
 import React from "react";
 import Bg from './utilities/bg.svg'
 import Logo from './utilities/mvlogo.svg'
@@ -6,7 +5,7 @@ import Logo from './utilities/mvlogo.svg'
 
 export default function Home() {
     return (
-        <div className=" bg-black text-white flex flex-col" style={{backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
+        <div className=" bg-black text-white flex flex-col" style={{backgroundImage: `url(${Bg})` ,height:'100vh', backgroundSize: 'cover'}}>
           <div className="flex flex-col  justify-center items-center align-center " >
           
           <div className="flex flex-col  justify-center items-center align-center sm:mt-[20vh] mt-[10vh]  sm:px-[6vw] px-[18vw] py-[3vh] bg-white rounded-[100px] bg-opacity-[30%] ">
@@ -17,13 +16,14 @@ export default function Home() {
               MUN{"\n              "}
             </h1>
             <p className="text-xl sm:text-4xl mb-8 text-black font-bold">THE FIRST EDITION</p>
-            <button className="bg-[#000000] text-white  py-3 rounded-full hover:bg-[#8F3B9D] items-center w-[8rem] font-black sm:scale-100 sc">Sign Up</button>
+
+            <button className="bg-[#000000] text-white  py-3 rounded-full hover:bg-[#8F3B9D] items-center w-[8rem] font-black sm:scale-100 sc" >Sign Up</button>
   
   
           </div>
           
         </div>
-        <Footers/>
+
         </div>
    
     );
