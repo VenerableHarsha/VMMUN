@@ -10,7 +10,7 @@ const Footer = () => {
 
     alert('Contact action triggered!');
   };
-
+//change this 
   return (
     <footer style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem', fontFamily: 'Open Sans, sans-serif', background: "#43014a",color:"white"   }}>
       <div>

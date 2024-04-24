@@ -15,10 +15,12 @@ function Navbar() {
             <div className='text-2xl sm:text-3xl'><span className='font-bold'>MV</span>MUN</div>
         </div>
         <div className='flex gap-12 items-center taha cursor-pointer '>
-            <div className='hover:texturple-600'>Home</div>
+
             <div className='hover:text-purple-600'>About</div>
-            <div className='hover:text-purple-600'>Info</div>
-            
+            <div className='hover:text-purple-600'>Committees</div>
+            <div className='hover:text-purple-600'>Secretariat</div>
+            <div className='hover:text-purple-600'>Conference Details</div>
+            <div className='hover:text-purple-600'>Contact Us</div>
             <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'>Sign Up</div>
 
         </div>

@@ -9,7 +9,7 @@ function AboutUs() {
             <div className='sm:w-5/12 sm:h-[400px] bg-pink-300 rounded-3xl w-[280px] h-[320px] bc'><div className='flex justify-center mt-4'><img src={roxky} className='w-28 sm:w-40'></img></div></div>
             <div className='sm:w-5/12 sm:h-[400px] bg-pink-300 rounded-3xl w-[280px] h-[320px] bc'></div>
             
-        </div>
+        </div> // small blob co-partner
     </div>
   );
 }

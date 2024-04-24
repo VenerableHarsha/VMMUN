@@ -29,7 +29,7 @@ function EB() {
         ugandan,
         ugandan,
         ugandan,
-        ugandan,
+
 
     ];
 
@@ -37,12 +37,12 @@ function EB() {
     for (let i = 0; i < images.length; i += imagesPerRow) {
         rows.push(images.slice(i, i + imagesPerRow));
     }
-
+// hover over function where full tag is covered 
     return (
         <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "30px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
-                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>EB</b></h1>
+                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committees</b></h1>
                 </div>
             </div>
 
