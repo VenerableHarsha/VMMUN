@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import ugandan from "./utilities/download.png";
+<<<<<<< HEAD
 
 
 
 function Committees() {
 
+=======
+// only three images please 
+function Committees() {
+>>>>>>> 46bdbaf160016945ce2997139f888b3527f7c417
     const [imagesPerRow, setImagesPerRow] = useState(4); 
     const [imageWidth, setImageWidth] = useState(0);
 
@@ -44,11 +49,15 @@ function Committees() {
         <div className="min-h-screen w-screen" style={{ background: "#43014a", padding: "70px" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
+<<<<<<< HEAD
 
                     <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committee</b></h1>
 
                     
 
+=======
+                    <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900" }}><b>Committees</b></h1>
+>>>>>>> 46bdbaf160016945ce2997139f888b3527f7c417
                 </div>
             </div>
 
