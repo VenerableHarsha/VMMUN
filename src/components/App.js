@@ -5,6 +5,7 @@ import Home from "./home";
 import Footers from "./footer";
 import Committees from "./Committees";
 import Secretariat from "./Secretariat";
+import '../index.css'
 
 
 export default function App() {
@@ -27,7 +28,10 @@ export default function App() {
         <div id="kit">
         <Kit />
         </div>
+        <div id="contact">
         <Footers/>
+        </div>
+
 
     </div>
   );
