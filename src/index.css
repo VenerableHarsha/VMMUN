@@ -9,6 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  background-color:  ;
+}
 
 
 
@@ -31,7 +34,8 @@ code {
   color: white;
 }
 .bc{
-  background-color: rgb(238, 128, 232);
+  background-color: white ;
+  opacity: 50%;
 }
 .signup{
   background-color: #8f3b9d;

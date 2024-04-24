@@ -21,7 +21,7 @@ function Navbar() {
             <div className='hover:text-purple-600'>Secretariat</div>
             <div className='hover:text-purple-600'>Conference Details</div>
             <div className='hover:text-purple-600'>Contact Us</div>
-            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'>Sign Up</div>
+            <div className='bg-black text-black p-2 px-6 rounded-3xl signup font-bold hover:bg-white'><a href="https://docs.google.com/forms/d/e/1FAIpQLScbI8HntdPouYheyQZLzm6QZzDUHHt95DUNXMur7pjszW3-Nw/viewform?pli=1">Sign Up</a></div>
 
         </div>
         <div className='scrollbar taha2' onClick={()=>{
@@ -42,7 +42,7 @@ function Navbar() {
             <div className='hover:text-purple-600'>Secretariat</div>
             <div className='hover:text-purple-600'>Conference Details</div>
             <div className='hover:text-purple-600'>Contact Us</div>
-            <div className='hover:text-purple-600 text-2xl font-black text-white'>Sign Up</div>
+            <div className='hover:text-purple-600 text-2xl font-black text-white'><a href="https://docs.google.com/forms/d/e/1FAIpQLScbI8HntdPouYheyQZLzm6QZzDUHHt95DUNXMur7pjszW3-Nw/viewform?pli=1">Sign Up</a></div>
         </div>
     }
     </div>
