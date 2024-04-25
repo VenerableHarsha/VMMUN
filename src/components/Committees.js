@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import a from "./utilities/1.png";
-import b from "./utilities/2.png";
-import c from "./utilities/3.png";
+import a from "./utilities/UNHRC.png";
+import b from "./utilities/WHO.png";
+import c from "./utilities/unsc.png";
 import ugandan from "./utilities/download.png";
 
 const images = [ugandan, ugandan, ugandan];
