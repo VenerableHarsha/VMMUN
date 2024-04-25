@@ -51,7 +51,7 @@ export default function BookGrid() {
         <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg">
             <h2 className="text-xl font-semibold mb-4">{selectedBook.title}</h2>
-            <Button className="text-white" variant="outline" onClick={handleBookDeselect}>
+            <Button className="text-white bg-purple-600 hover:bg-purple-400" variant="outline" onClick={handleBookDeselect}>
               Close
             </Button>
           </div>
