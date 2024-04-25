@@ -3,6 +3,7 @@ import s1 from './utilities/s1.png'
 import s2 from './utilities/s2.jpg'
 import s3 from './utilities/s3.jpg'
 import s4 from './utilities/s4.jpg'
+import s5 from './utilities/Harsha.jpg'
 
 function Secretariat() {
     const [imagesPerRow, setImagesPerRow] = useState(4);
@@ -32,7 +33,7 @@ function Secretariat() {
     const textWidth = containerWidth / imagesPerRow - 40;
 
     const images = [
-        s4, s1, s3, s1, s2
+        s4, s5, s3, s1, s2
     ];
 
     const texts = [

@@ -81,24 +81,7 @@ export default function BookGrid() {
         ))}
       </div>
 
-      <div className="flex justify-center mt-8">
-        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
-          Shop Now
-        </Button>
-      </div><div className="flex justify-center mt-8">
-        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
-          Shop Now
-        </Button>
-      </div><div className="flex justify-center mt-8">
-        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
-          Shop Now
-        </Button>
-      </div>
-      <div className="flex justify-center mt-8 ">
-        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
-          Shop Now
-        </Button>
-      </div>
+    
       {selectedBook && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg">
@@ -113,7 +96,7 @@ export default function BookGrid() {
   );
 }
 
-
+// buttons
 function FileIcon(props) {
   
   return (
