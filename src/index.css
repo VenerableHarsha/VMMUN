@@ -9,7 +9,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.para{
+  font-weight: 600;
+  font-size: 18px;
+}
 
 *, html {
 
@@ -49,6 +52,7 @@ code {
   }
   .para{
     font-size: 12px;
+   
   }
   
 }
