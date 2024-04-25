@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ugandan from "./utilities/download.png";
+import s1 from './utilities/s1.png'
+import s2 from './utilities/s2.jpg'
+import s3 from './utilities/s3.jpg'
+import s4 from './utilities/s4.jpg'
 
 function Secretariat() {
     const [imagesPerRow, setImagesPerRow] = useState(4);
@@ -29,11 +32,7 @@ function Secretariat() {
     const textWidth = containerWidth / imagesPerRow - 40;
 
     const images = [
-        ugandan,
-        ugandan,
-        ugandan,
-        ugandan,
-        ugandan,
+        s4, s1, s3, s1, s2
     ];
 
     const texts = [
@@ -66,7 +65,7 @@ function Secretariat() {
                                     src={image}
                                     alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                     className="image"
-                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "20px" }}
+                                    style={{ borderRadius: "10px", width: `${imageWidth}px`, height:`${imageWidth}px`, marginBottom: "20px" , objectFit:'cover'}}
                                 />
                                 <h1 style={{ fontFamily: "Bahnschrift", fontSize: "1.25rem", color: "white", textAlign: "center", width: `${textWidth}px`, marginBottom: "20px" }}>
                                     <b>{row.texts[imageIndex].split('\n').map((line, index) => (
