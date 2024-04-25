@@ -36,7 +36,7 @@ export default function BookGrid() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#420032" }}>
+    <div style={{ backgroundColor: "#420032",padding:'10px 0px 100px 0px' }}>
       <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "50px 0px" }}>
           <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900", color: "white" }}><b>Conference Details</b></h1>
@@ -64,30 +64,48 @@ export default function BookGrid() {
                 <h3 className="text-2xl font-bold">{book.title}</h3>
               </div>
             </div>
-            {/* Commenting out the button */}
+            {/* Commenting out the "Open PDF" button */}
             {/* <div className="absolute bottom-4 left-0 right-0 flex justify-center">
               <Button className="text-white" variant="outline" onClick={() => handleBookSelect(book)}>
-                <FileIcon className="h-5 w-5 mr-2" />
                 Open PDF
               </Button>
             </div> */}
           </div>
         ))}
-
-        {selectedBook && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
-            <div className="bg-white p-8 rounded-lg">
-              <h2 className="text-xl font-semibold mb-4">{selectedBook.title}</h2>
-              <Button className="text-white bg-purple-600 hover:bg-purple-400" variant="outline" onClick={handleBookDeselect}>
-                Close
-              </Button>
-            </div>
-          </div>
-        )}
       </div>
+
+      <div className="flex justify-center mt-8">
+        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
+          Shop Now
+        </Button>
+      </div><div className="flex justify-center mt-8">
+        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
+          Shop Now
+        </Button>
+      </div><div className="flex justify-center mt-8">
+        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
+          Shop Now
+        </Button>
+      </div>
+      <div className="flex justify-center mt-8 ">
+        <Button className="text-white bg-blue-600 hover:bg-blue-400" variant="standard">
+          Shop Now
+        </Button>
+      </div>
+      {selectedBook && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-lg">
+            <h2 className="text-xl font-semibold mb-4">{selectedBook.title}</h2>
+            <Button className="text-white bg-purple-600 hover:bg-purple-400" variant="outline" onClick={handleBookDeselect}>
+              Close
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
 
 function FileIcon(props) {
   return (
