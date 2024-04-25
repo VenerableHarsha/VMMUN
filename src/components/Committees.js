@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import a from "./utilities/1.png";
+import a from "./utilities/UNHRC.png";
 import b from "./utilities/2.png";
 import c from "./utilities/3.png";
 import ugandan from "./utilities/download.png";
@@ -78,7 +78,7 @@ function Committees() {
                                         src={backgroundImages[rowIndex * imagesPerRow + imageIndex]}
                                         alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                         className="hovered-image"
-                                        style={{ borderRadius: "10px", height:`${imageWidth}px`,width: `${imageWidth*3}px`,opacity:'0.5',objectFit: "cover" ,marginBottom: "30px" }}
+                                        style={{ borderRadius: "10px", height:`${imageWidth*1.5}px`,width: `${imageWidth*3}px`,opacity:'0.5',objectFit: "cover" ,marginBottom: "30px" }}
                                     />
                                 )}
                             </div>
