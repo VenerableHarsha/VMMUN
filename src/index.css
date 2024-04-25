@@ -11,27 +11,8 @@ body {
 }
 .para{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
-.hovered-image {
-  opacity: 0;
-  transform: scale(1);
-  transition: opacity 3s ease-in-out 2s, transform 3s ease-in-out 2s; 
-}
-
-.default-image {
-  transition: opacity 3s ease-in-out;
-}
-
-.image-container:hover .default-image {
-  opacity: 0; 
-}
-
-.image-container:hover .hovered-image {
-  opacity: 1;
-  transform: scale(1.1); 
-}
-
 
 *, html {
 
@@ -65,7 +46,7 @@ code {
 @media screen and (min-width: 751px) and (max-width: 1270px) {
   /* Styles for screens between 1271px and 750px */
   .para{
-    font-size: 13.5px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 750px) {

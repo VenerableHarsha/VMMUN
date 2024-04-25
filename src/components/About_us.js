@@ -5,7 +5,7 @@ import rot from './utilities/MediKardiafinallogo.svg';
 import roxky from './utilities/AmsaLogo.svg';
 function AboutUs() {
   return (
-    <div className="h-[1500px] sm:h-[180vh] text-white flex flex-col" style={{backgroundColor:"#8f3b9d", color:"white", backgroundImage: `url(${AboutUsBg})` , backgroundSize: 'cover'}}>
+    <div className="h-[1500px] sm:h-[200vh] text-white flex flex-col" style={{backgroundColor:"#8f3b9d", color:"white", backgroundImage: `url(${AboutUsBg})` , backgroundSize: 'cover'}}>
     <div style={{fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900"}} className='text-black font-bold flex justify-center text-2xl mt-10 sm:3xl '>About us</div>
     <div className='flex gap-12 justify-center flex-wrap mt-14 '>
         <div className='sm:w-5/12 sm:h-[600px] rounded-3xl w-[280px] h-[380px] bc' style={{backgroundColor:'rgba(255, 255, 255, 0.5)'}}><div className='flex justify-center mt-4'><img src={rot} className='w-14 sm:w-14'></img></div>
