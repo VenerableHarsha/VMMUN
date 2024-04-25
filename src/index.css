@@ -11,8 +11,27 @@ body {
 }
 .para{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
+.hovered-image {
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.3s ease-in-out 0.2s, transform 0.3s ease-in-out 0.2s; /* Added delay and scaling transition */
+}
+
+.default-image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .default-image {
+  opacity: 0; /* Hide default image on hover */
+}
+
+.image-container:hover .hovered-image {
+  opacity: 1;
+  transform: scale(1.1); /* Scale up hovered image on hover */
+}
+
 
 *, html {
 
