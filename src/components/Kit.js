@@ -13,15 +13,16 @@ export default function BookGrid() {
   };
 
   const books = [
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
-    { title: "To Kill a Mockingbird", author: "Harper Lee" },
-    { title: "1984", author: "George Orwell" },
+    { title: "The Great Gatsby" },
+    { title: "To Kill a Mockingbird" },
+    { title: "1984" },
+    { title: "1984" }
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto py-12">
-      {books.map((book, index) => (
-        <div key={index} className="relative group overflow-hidden rounded-lg">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto py-12">
+  {books.map((book, index) => (
+    <div key={index} className="relative group overflow-hidden rounded-lg sm:max-w-[80%] md:max-w-none">
           <img
             alt="Book Cover"
             className="w-full h-[400px] sm:h-[500px] object-cover transition-transform duration-300 group-hover:scale-105"
@@ -33,13 +34,12 @@ export default function BookGrid() {
             }}
             width={600}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-            <div className="text-white space-y-2">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-center p-6">
+            <div className="text-white text-center space-y-2">
               <h3 className="text-2xl font-bold">{book.title}</h3>
-              <p className="text-sm">{book.author}</p>
             </div>
           </div>
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center">
             <Button className="text-white" variant="outline" onClick={() => handleBookSelect(book)}>
               <FileIcon className="h-5 w-5 mr-2" />
               Open PDF
@@ -51,7 +51,6 @@ export default function BookGrid() {
         <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg">
             <h2 className="text-xl font-semibold mb-4">{selectedBook.title}</h2>
-            <p className="text-sm mb-4">Author: {selectedBook.author}</p>
             <Button className="text-white" variant="outline" onClick={handleBookDeselect}>
               Close
             </Button>
@@ -61,7 +60,6 @@ export default function BookGrid() {
     </div>
   );
 }
-
 function FileIcon(props) {
   return (
     <svg

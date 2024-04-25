@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
 
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
               <h1 style={{ fontFamily: "Bahnschrift", padding: "20px", fontSize: "2.5rem" }}>
                 <b>Secretariat</b>
               </h1>
