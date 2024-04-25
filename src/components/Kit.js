@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Button from './button'; 
+import image1 from './utilities/image1.png';
+import image2 from './utilities/image2.png';
+import image3 from './utilities/image3.png';
+import image4 from './utilities/image4.png';
+
 
 export default function BookGrid() {
   const [selectedBook, setSelectedBook] = useState(null);
@@ -14,11 +19,12 @@ export default function BookGrid() {
   };
 
   const books = [
-    { title: "The Great Gatsby" },
-    { title: "To Kill a Mockingbird" },
-    { title: "1984" },
-    { title: "1984" }
+    { title: "Human Rights Council" },
+    { title: "Security Council" },
+    { title: "Rules of Procedure" },
+    { title: "World Health Organisation" }
   ];
+  const arr=[image1,image2,image3,image4];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 640px)');
@@ -36,6 +42,7 @@ export default function BookGrid() {
   }, []);
 
   return (
+    
     <div style={{ backgroundColor: "#420032",padding:'10px 0px 100px 0px' }}>
       <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "50px 0px" }}>
@@ -50,12 +57,12 @@ export default function BookGrid() {
 
             <img
               alt="Book Cover"
-              className="w-full h-[400px] sm:h-[500px] object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-[400px] sm:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
               height={800}
-              src="/placeholder.svg"
+              src={arr[index]}
               style={{
                 aspectRatio: "600/800",
-                objectFit: "cover",
+                
               }}
               width={600}
             />
@@ -108,6 +115,7 @@ export default function BookGrid() {
 
 
 function FileIcon(props) {
+  
   return (
     <svg
       {...props}
