@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import a from "./utilities/UNHRC.png";
 import b from "./utilities/2.png";
 import c from "./utilities/3.png";
-import ugandan from "./utilities/download.png";
+import unhrc from './utilities/unhrc.svg';
+import who from './utilities/who.svg';
+import unsc from './utilities/unsc.svg';
 
-const images = [ugandan, ugandan, ugandan];
+const images = [unhrc,unsc, who ];
 
 function Committees() {
     const [imagesPerRow, setImagesPerRow] = useState(4);
