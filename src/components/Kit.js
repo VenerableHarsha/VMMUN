@@ -4,6 +4,11 @@ import image1 from './utilities/image1.png';
 import image2 from './utilities/image2.png';
 import image3 from './utilities/image3.png';
 import image4 from './utilities/image4.png';
+import image5 from "./utilities/image5.png";
+import unhrc from './utilities/unhrc_agenda.png'
+import who from './utilities/who_agenda.png'
+import unsc from './utilities/unsc_agenda.png'
+import ipc from './utilities/ipc_agenda.png'
 
 
 export default function BookGrid() {
@@ -19,12 +24,13 @@ export default function BookGrid() {
   };
 
   const books = [
-    { title: "Human Rights Council" },
-    { title: "Security Council" },
-    { title: "Rules of Procedure" },
-    { title: "World Health Organisation" }
+    { title: "Human Rights Council", agenda: unhrc },
+    { title: "Security Council" , agenda: unsc},
+    /*{ title: "Rules of Procedure", agenda : null },*/
+    { title: "World Health Organisation" , agenda: who},
+    {title : "International Press Corps", agenda: ipc}
   ];
-  const arr=[image1,image2,image3,image4];
+  const arr=[image1,image2,image3,image4, image5];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 640px)');
@@ -71,22 +77,22 @@ export default function BookGrid() {
                 <h3 className="text-2xl font-bold">{book.title}</h3>
               </div>
             </div>
-            {/* Commenting out the "Open PDF" button */}
-            {/* <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
               <Button className="text-white" variant="outline" onClick={() => handleBookSelect(book)}>
-                Open PDF
+                Know more!
               </Button>
-            </div> */}
+            </div> 
           </div>
         ))}
       </div>
 
     
       {selectedBook && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50">
-          <div className="bg-white p-8 rounded-lg">
-            <h2 className="text-xl font-semibold mb-4">{selectedBook.title}</h2>
-            <Button className="text-white bg-purple-600 hover:bg-purple-400" variant="outline" onClick={handleBookDeselect}>
+        <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50" onClick={handleBookDeselect}>
+          <div className="flex flex-col rounded-lg items-center justify-center bg-black">
+            <img src={selectedBook.agenda} alt={selectedBook.title} className='max-w-[95vw] max-h-[80vh] '></img>
+            <Button className="text-black bg-black mt-[5vh] mb-[3vh]" variant="outline" onClick={handleBookDeselect}>
               Close
             </Button>
           </div>

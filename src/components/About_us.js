@@ -2,7 +2,7 @@ import React from 'react';
 import AboutUsBg from './utilities/Background.svg'; 
 import vini from './utilities/vinimaya.svg';
 import rot from './utilities/MediKardiafinallogo.svg';
-import roxky from './utilities/AmsaLogo.svg';
+import roxky from './utilities/AmsaLogo.png';
 function AboutUs() {
   return (
     <div className="h-[1700px] sm:h-[200vh] text-white flex flex-col" style={{backgroundColor:"#8f3b9d", color:"white", backgroundImage: `url(${AboutUsBg})` , backgroundSize: 'cover'}}>
@@ -21,7 +21,7 @@ It would be criminal to restrict such a budding club small but talented populati
         </div> 
         <div className='w-[100%] flex  justify-center mt-12 '>
         <div className='sm:w-5/12 sm:h-[450px] bg-pink-300 bc rounded-3xl  flex flex-col w-[280px] h-[380px]'style={{backgroundColor:'rgba(255, 255, 255, 0.5)'}}>
-       <div className='flex justify-center mt-4'> <img src={roxky} className='w-14 sm:w-14' ></img></div>
+       <div className='flex justify-center mt-4'> <img src={roxky} className='w-20 sm:w-20' alt='AMSA'></img></div>
       
         <div className='sm:text-md text-black mt-5 mb-5 mx-6 para' >
         As the AMSA India Bioethics Unit, we have been at the forefront of efforts to enhance the social literacy of medical students, organizing workshops nationwide to educate and inform students from “the pillars of bioethics” to much more complex nuanced explorations of social justice and literacy.

@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import a from "./utilities/UNHRC.png";
 import b from "./utilities/2.png";
 import c from "./utilities/3.png";
+import d from './utilities/4.png';
 import unhrc from './utilities/unhrc.svg';
 import who from './utilities/who.svg';
 import unsc from './utilities/unsc.svg';
+import ipc from './utilities/ipc.png';
 
-const images = [unhrc,unsc, who ];
+const images = [unhrc,unsc, who, ipc ];
 
 function Committees() {
     const [imagesPerRow, setImagesPerRow] = useState(4);
@@ -18,9 +20,9 @@ function Committees() {
             if (window.innerWidth < 412) {
                 setImagesPerRow(1);
             } else if (window.innerWidth < 768) {
-                setImagesPerRow(2);
+                setImagesPerRow(1);
             } else {
-                setImagesPerRow(3);
+                setImagesPerRow(2);
             }
             const containerWidth = window.innerWidth;
             setImageWidth(containerWidth / imagesPerRow - 70);
@@ -33,10 +35,13 @@ function Committees() {
         return () => window.removeEventListener('resize', handleResize);
     }, [imagesPerRow]);
 
-    const backgroundImages = [a, b, c];
+    const backgroundImages = [a, b, c, d];
 
     const handleMouseEnter = (index) => {
-        setHoveredImage(index);
+        if(imagesPerRow!==1){
+            setHoveredImage(index);
+        }
+       
     };
 
     const handleMouseLeave = () => {
@@ -49,13 +54,13 @@ function Committees() {
     }
 
     return (
-        <div className="min-h-screen w-[100%]" style={{ background: "#43014a", padding: "70px" }}>
+        <div className=" w-[100%] p-[10px] sm:h-[180vh]" style={{ background: "#43014a" }}>
             <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "50px" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "20px" }}>
                     <h1 style={{ fontFamily: "Bahnschrift", fontSize: "2rem", fontWeight: "900", color: "white" }}><b>Committees</b></h1>
                 </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", marginTop: "20px" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", marginTop: "20px", marginLeft:"15vw", marginRight:"15vw" }}>
                 {rows.map((row, rowIndex) => (
                     <div key={rowIndex} style={{ display: "flex", gap: "30px" }}>
                         {row.map((_, imageIndex) => (
@@ -71,7 +76,7 @@ function Committees() {
                                         src={images[rowIndex * imagesPerRow + imageIndex]}
                                         alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
                                         className="default-image"
-                                        style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "30px" }}
+                                        style={{ borderRadius: "10px", width: `${imageWidth}px`, marginBottom: "10px" }}
                                     />
                                 )}
                                 {/* crop */}
@@ -79,8 +84,8 @@ function Committees() {
                                     <img
                                         src={backgroundImages[rowIndex * imagesPerRow + imageIndex]}
                                         alt={`Logo${rowIndex * imagesPerRow + imageIndex + 1}`}
-                                        className="hovered-image"
-                                        style={{ borderRadius: "10px", height:`${imageWidth*1.5}px`,width: `${imageWidth*3}px`,opacity:'0.5',objectFit: "cover" ,marginBottom: "30px" }}
+                                        className="hovered-image  mt-100px"
+                                        style={{ borderRadius: "10px",opacity:'0.5',objectFit: "cover" ,marginBottom: "10px" }}
                                     />
                                 )}
                             </div>

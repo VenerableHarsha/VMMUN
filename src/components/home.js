@@ -5,7 +5,7 @@ import Logo from './utilities/mvlogo.svg'
 
 export default function Home() {
     return (
-        <div className=" bg-black text-white flex flex-col z-0 " style={{backgroundImage: `url(${Bg})` , backgroundSize: 'cover'}}>
+        <div className=" bg-black text-white flex flex-col z-0 box-inner" style={{ backgroundSize: 'cover'}}>
           <div className="flex flex-col  justify-center items-center align-center mb-[7vh] sm:h-screen " >
           
           <div className="flex flex-col  justify-center items-center align-center sm:mt-[15vh] mt-[18vh]  sm:px-[6vw] px-[18vw] py-[3vh] bg-white rounded-[100px] bg-opacity-[30%] ">
