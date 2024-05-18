@@ -7,7 +7,7 @@ import rot from './utilities/MediKardiafinallogo.svg';
 import roxky from './utilities/AmsaLogo.png';
 
 function AboutUs() {
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.3 });
   
   return (
     <div ref={ref} className="h-[1700px] sm:h-[200vh] text-white flex flex-col" style={{ backgroundColor:"#8f3b9d", color:"white", backgroundImage: `url(${AboutUsBg})`, backgroundSize: 'cover' }}>
