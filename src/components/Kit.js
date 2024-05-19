@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Button from './button'; 
 import image1 from './utilities/image1.png';
-import image2 from './utilities/image2.png';
 import image3 from './utilities/image3.png';
 import image4 from './utilities/image4.png';
 import image5 from "./utilities/image5.png";
-import unhrc from './utilities/unhrc_agenda.png'
-import who from './utilities/who_agenda.png'
-import unsc from './utilities/unsc_agenda.png'
-import ipc from './utilities/ipc_agenda.png'
+import ROP from './utilities/rules_of_procedure.pdf'
+import ipc_pdf from "./utilities/ipc.pdf";
+import unhrc_pdf from './utilities/unhrc.pdf';
+import who_pdf from './utilities/who.pdf';
 
 
 export default function BookGrid() {
@@ -22,15 +21,13 @@ export default function BookGrid() {
   const handleBookDeselect = () => {
     setSelectedBook(null);
   };
-
   const books = [
-    { title: "Human Rights Council", agenda: unhrc },
-    { title: "Security Council" , agenda: unsc},
+    { title: "Human Rights Council", pdf: unhrc_pdf },
     /*{ title: "Rules of Procedure", agenda : null },*/
-    { title: "World Health Organisation" , agenda: who},
-    {title : "International Press Corps", agenda: ipc}
+    { title: "World Health Organisation" , pdf: who_pdf},
+    {title : "International Press Corps", pdf: ipc_pdf}
   ];
-  const arr=[image1,image2,image3,image4, image5];
+  const arr=[image1,image3,image4, image5];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 640px)');
@@ -47,6 +44,15 @@ export default function BookGrid() {
     };
   }, []);
 
+  const onButtonClick = (pdf, fileName) => {
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.download = fileName; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   return (
     
     <div style={{ backgroundColor: "#420032",padding:'10px 0px 100px 0px' }}>
@@ -57,13 +63,13 @@ export default function BookGrid() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl mx-auto py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto py-12">
         {books.map((book, index) => (
           <div key={index} style={{margin:'10px'}} className={`relative group overflow-hidden rounded-lg ${isSmallScreen ? 'h-[calc(40vh-12px)]' : 'h-[calc(50vh-6px)]'} ${isSmallScreen ? 'w-[calc(100%-20px)]' : 'sm:w-[calc(100%-12px)] md:w-[calc(100%-12px)] lg:w-[calc(100%-12px)] xl:w-[calc(100%-12px)]'}  bg-white`}>
 
             <img
               alt="Book Cover"
-              className="w-full h-[400px] sm:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-[400px] sm:h-[350px] object-cover cover transition-transform duration-300 group-hover:scale-105"
               height={800}
               src={arr[index]}
               style={{
@@ -79,14 +85,43 @@ export default function BookGrid() {
             </div>
 
             <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-              <Button className="text-white" variant="outline" onClick={() => handleBookSelect(book)}>
-                Know more!
+              <Button className="text-white" variant="outline" onClick={() => onButtonClick(book.pdf, `MVMUN ${book.title} Background Guide.pdf`)}>
+                Download Guide
               </Button>
             </div> 
+            
           </div>
         ))}
       </div>
 
+      
+      <div className=" w-full max-w-4xl mx-auto py-12 max-h-[100vh]">
+          <div style={{margin:'10px'}} className={`relative group overflow-hidden rounded-lg ${isSmallScreen ? 'h-[calc(40vh-12px)]' : 'h-[calc(50vh-6px)]'} ${isSmallScreen ? 'w-[calc(100%-20px)]' : 'sm:w-[calc(100%-12px)] md:w-[calc(100%-12px)] lg:w-[calc(100%-12px)] xl:w-[calc(100%-12px)]'}  bg-white`}>
+
+            <img
+              alt="Book Cover"
+              className="w-full h-[400px] sm:h-[350px] object-cover cover transition-transform duration-300 group-hover:scale-105"
+              height={800}
+              src={image3}
+              style={{
+                aspectRatio: "600/800",
+                
+              }}
+              width={600}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-center p-6">
+              <div className="text-white text-center space-y-2">
+                <h3 className="text-2xl font-bold">Rules of Procedure</h3>
+              </div>
+            </div>
+
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+              <Button className="text-white" variant="outline" onClick={() =>onButtonClick(ROP, "MVMUN_Rules_Of_Procedure.pdf")}>
+                Download
+              </Button>
+            </div> 
+          </div>
+      </div>
     
       {selectedBook && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center z-50" onClick={handleBookDeselect}>
@@ -98,7 +133,10 @@ export default function BookGrid() {
           </div>
         </div>
       )}
+
     </div>
+
+    
   );
 }
 

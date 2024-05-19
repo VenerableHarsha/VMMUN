@@ -6,6 +6,7 @@ import Footers from "./footer";
 import Committees from "./Committees";
 import Secretariat from "./Secretariat";
 import '../index.css'
+import CMgrid from "./matrix";
 
 
 export default function App() {
@@ -27,6 +28,9 @@ export default function App() {
         </div>
         <div id="kit">
         <Kit />
+        </div>
+        <div id="cm">
+        <CMgrid/>
         </div>
         <div id="contact">
         <Footers/>
