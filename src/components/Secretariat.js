@@ -18,7 +18,7 @@ function Secretariat() {
             } else if (width < 768) {
                 setImagesPerRow(2);
             } else {
-                setImagesPerRow(3);
+                setImagesPerRow(2);
             }
         };
 
@@ -33,11 +33,11 @@ function Secretariat() {
     const textWidth = containerWidth / imagesPerRow - 40;
 
     const images = [
-        s4, s5, s3, s1, s2
+         s5, s3, s1, s2
     ];
 
     const texts = [
-        "Rtr. Navya Rao \n Co-Secretary General",
+       
         "Harsha Chigurupati \n Direct General",
         "Rtr. Sujal Prakash Naidu \n Co-Secretary General",
         "Rtr. Karthik Venkatesh U. \n Head of OC",

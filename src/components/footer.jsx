@@ -17,25 +17,48 @@ const Footer = () => {
 
             <div className="flex flex-col items-center ">
               <h1 style={{ fontFamily: "Bahnschrift", padding: "20px", fontSize: "2.5rem" }}>
-                <b>Secretariat</b>
+                <b>OC</b>
               </h1>
               <div className="flex items-center space-x-2">
               <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>    
-                <span>Rtr. Navya Rao </span>
+                <span>Rtr. Karthik Venkatesh .U</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MailboxIcon className="w-5 h-5" />
-                <span>inavyarao@gmail.com</span>
+              <PhoneIcon className="w-5 h-5" />
+                <span>+91 734-887-6452</span>
               </div>
               <div className="flex items-center space-x-2">
               <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
                 <span>Rtr. Sujal Prakash Naidu </span>
               </div>
               <div className="flex items-center space-x-2">
-                <MailboxIcon className="w-5 h-5" />
-                <span>sujalp1907@gmail.com</span>
+              <PhoneIcon className="w-5 h-5" />
+                <span>+91 761-967-4868</span>
               </div>
-              
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Harsha Chigurupati </span>
+              </div>
+              <div className="flex items-center space-x-2">
+              <PhoneIcon className="w-5 h-5" />
+                <span>+91 944-974-3975</span>
+              </div>
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Veeksha S </span>
+              </div>
+              <div className="flex items-center space-x-2">
+              <PhoneIcon className="w-5 h-5" />
+                <span>+91 948-170-6781</span>
+              </div>
+              <div className="flex items-center space-x-2">
+              <img className='w-5 h-5' src={PersonIcon} alt="Person Icon" style={{ fill: 'white' }}/>
+                <span>Rtr. Arjun Duvvuri </span>
+              </div>
+              <div className="flex items-center space-x-2">
+              <PhoneIcon className="w-5 h-5" />
+                <span>+91 636-233-4710</span>
+              </div>
             </div>
 
 
