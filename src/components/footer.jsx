@@ -10,6 +10,7 @@ const Footer = () => {
 
   return (
     <div className="bg-black text-white flex flex-col">
+      <div className='text-center text-[1.5rem] bg-transparent bg-black'>No Refund Policy!</div>
       <footer className="bg-gray-900 text-gray-400 py-6 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
